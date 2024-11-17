@@ -1,0 +1,244 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background with gradient */
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f3e7ff 0%, #ffffff 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Title and subtitle styling */
+.title-container {
+    width: 90%;
+    max-width: 700px;
+    height: 180px;
+    background-color: #6c5ce7;
+    border-radius: 20px;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title {
+    font-family: Arial, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+}
+
+.subtitle {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: white;
+}
+
+/* Decorative circuit elements */
+.circuit-1,
+.circuit-2 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: transparent;
+}
+
+.circuit-1 {
+    top: 200px;
+    border-top: 2px solid #e0b0ff;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.circuit-2 {
+    top: 300px;
+    border-top: 2px solid #b8e0ff;
+    width: 50%;
+    margin-left: 25%;
+}
+
+/* Icon circles */
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.left {
+    top: 300px;
+    left: 100px;
+    background-color: #a8e6cf;
+}
+
+.right {
+    top: 300px;
+    right: 100px;
+    background-color: #ffd3b6;
+}
+
+/* Content Section */
+.content-section {
+    width: 90%;
+    max-width: 700px;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 15px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.section-title {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: #6c5ce7;
+    margin-bottom: 30px;
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 15px;
+    left: 0%;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    z-index: -1;
+}
+
+/* Conectores entre los puntos */
+.timeline-line-left {
+    position: absolute;
+    top: 15px;
+    left: 30%;
+    width: 40%;
+    height: 2px;
+    background-color: #ddd;
+}
+
+.timeline-line-right {
+    position: absolute;
+    top: 15px;
+    right: 30%;
+    width: 40%;
+    height: 2px;
+    background-color: #ddd;
+}
+
+/* Estilos de los puntos de la línea de tiempo */
+.timeline-point {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #ddd;
+    z-index: 1;
+}
+
+.timeline-point span {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.point-ani {
+    background-color: #a8e6cf;
+}
+
+.point-agi {
+    background-color: #ffd3b6;
+}
+
+.point-asi {
+    background-color: #ff8b94;
+}
+
+/* Secciones principales */
+section {
+    width: 90%;
+    max-width: 700px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f3dede;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Introducción */
+.intro {
+    margin-top: 100px;  /* Separación adicional */
+}
+
+/* Títulos de las secciones */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6c5ce7;
+    margin-bottom: 15px;
+}
+
+/* Estilo para listas */
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+li {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .title-container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    .content-section {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    section {
+        width: 90%;
+        margin-top: 20px;
+    }
+}
